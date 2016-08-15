@@ -7,7 +7,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <h1 class="text-center">GoghBots</h1>
@@ -65,8 +65,67 @@
           <h2>Month 4: Dead Reckoning</h2>
           <p>
             We'll use some onboard sensors to try to track our own position.
+            This is known as <a href="https://en.wikipedia.org/wiki/Dead_reckoning">dead reckoning</a>.
             One way to test this is to plan a route ahead of time (1 meter forward, 1 meter to the right, etc) and then try to drive that route.
             We'll mark a few sample routes on the ground with tape so we can see how accurately our robots are tracking their position.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-6 text-right">
+          <h2>Month 5: Dead Reckoning + Obstacle Avoidance</h2>
+          <p>
+            By combining our last two features we can set a destination where want to end up and avoid obstacles along the way.
+            We'll have to find our way back onto the desired path when we avoid obstacles.
+            We'll try to setup various courses of a pre-planned path with some obstacles in the path to see how well we can correct around the obstacles.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 text-right">
+          <h2>Month 6: Computer Vision</h2>
+          <p>
+            Dead reckoning is always subject to "sensor drift" where the accuracy of our current position becomes worse and worse the farther we drive.
+            In order to correct our estimates we will use an external camera to watch the robots and give its own position estimates from time to time.
+            This month we'll be focused on getting a camera to see the robots and provide an estimate of their location.
+            <br />
+            <small>Note: This part of the schedule might change a lot. Some members of the group might want to suggest alternate ways of correcting our location or mounting cameras on the robots rather than having a separate camera watch the robots.</small>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-6 text-right">
+          <h2>Month 7: Dead Reckoning + Computer Vision + Obstacle Avoidance</h2>
+          <p>
+            Now that we have a new way to help us track our position we'll go back and try to do some more courses where we have a planned destination with obstacles in the way.
+            Hopefully we can get to our desired destinations much more accurately than we did with just dead reckoning and obstacle avoidance.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 text-right">
+          <h2>Month 8: Drawing Device</h2>
+          <p>
+            Before we can draw with our GoghBots we will need to have some sort of drawing tool that we can control from code.
+            Hopefully it can be simple, but more reliable and precise than <a href="https://youtu.be/s-rUZIwkI-o">this drawing robot</a>.
+            I'm imagining a servo that pushes a piece of sidewalk chalk on the ground so it can be easily raised and lowered.
+            We might need some help from 3D printing friends to build something for us.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6 col-lg-offset-6 text-right">
+          <h2>Month 9: Drawing Shapes &amp; Planning for the Future</h2>
+          <p>
+            We'll get together and have our GoghBots draw some geometric shapes using our new drawing devices in conjunction with our motion tracking from the last several months.
+            We can use pre-planned routes to create the geometic shapes.
+            <br/><br />
+            We'll try to measure how accurate our robots are at this point and come up with future plans for what we want to be able to draw and what improvements we'll need in order to that.
           </p>
         </div>
       </div>
